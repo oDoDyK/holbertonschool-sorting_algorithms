@@ -162,5 +162,3 @@ Example Output
 ```bash
 "Mastering Sorting Algorithms & Big O 📊💻 makes your code faster ⚡, smarter 🧠, and prepares you to tackle any challenge! 🔥"
 ```
-
-<img width="1920" height="1080" alt="Sorting-Algorithms Background Removed" src="https://github.com/user-attachments/assets/641628a6-e2e9-4a42-b749-da366ed6e7ad" />
