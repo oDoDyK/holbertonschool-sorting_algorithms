@@ -1,4 +1,16 @@
-# C - Sorting Algorithms & Big O ⚡
+# 🟦 C - Sorting Algorithms & Big O ⚡
+
+---
+## 📑 Table of Contents
+- [⚙️ Description](#⚙️-description)
+- [🧩 Project Files](#🧩-project-files)
+- [📊 Big O Notation Files](#📊-big-o-notation-files)
+- [🧰 Helper Files](#🧰-helper-files)
+- [🧠 Learning Objectives](#🧠-learning-objectives)
+- [🏗️ Requirements](#🏗️-requirements)
+- [🚀 Usage Example](#🚀-usage-example)
+- [🧮 Concept Summary](#🧮-concept-summary)
+- [✍️ Authors](#✍️-authors)
 
 ---
 
@@ -107,6 +119,18 @@ Example Output
 
 ---
 
+## 🧮 Concept Summary
+
+| Concept | Description |
+|----------|--------------|
+| **In-place sorting** | Sorting without using extra memory |
+| **Stable sorting** | Keeps the order of equal elements |
+| **Divide and conquer** | Splits the problem into smaller parts (Quick, Merge) |
+| **Comparison-based sorting** | Relies on comparing elements |
+| **Non-comparison sorting** | Sorts using value properties (Counting, Radix) |
+
+---
+
 ## ✍️Authors
 
 ## 👨🏽‍💻 Mohammed Abdulrahman Basuliman
@@ -122,3 +146,10 @@ Example Output
 🎓 Student at Holberton School  
 📧 Nada.ghannam19@gmail.com  
 🔗 GitHub: [NadaGhannam25](https://github.com/NadaGhannam25)
+
+---
+
+💡 Motivational Note
+```
+"Mastering Sorting Algorithms & Big O 📊💻 makes your code faster ⚡, smarter 🧠, and prepares you to tackle any challenge! 🔥"
+```
