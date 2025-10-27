@@ -1,24 +1,10 @@
-# 🟦 C - Sorting Algorithms & Big O 📊⚡
-
----
-
-## 📑 Table of Contents
-- [⚙️ Description](#⚙️-description)
-- [🧩 Project Files](#🧩-project-files)
-- [📊 Big O Notation Files](#📊-big-o-notation-files)
-- [🧰 Helper Files](#🧰-helper-files)
-- [🧠 Learning Objectives](#🧠-learning-objectives)
-- [🏗️ Requirements](#🏗️-requirements)
-- [🚀 Usage Example](#🚀-usage-example)
-- [🧮 Concept Summary](#🧮-concept-summary)
-- [✍️ Authors](#✍️-authors)
+# C - Sorting Algorithms & Big O ⚡
 
 ---
 
 ## ⚙️ Description
 This project focuses on implementing and analyzing multiple **sorting algorithms** in C.  
 Each algorithm sorts a list or an array in ascending order and demonstrates different approaches to sorting — from simple comparison-based methods to more efficient divide-and-conquer algorithms.  
-
 In addition, each algorithm’s **time complexity** is analyzed using **Big O notation**.
 
 ---
@@ -72,7 +58,7 @@ Each algorithm has an associated file (`*-O`) containing its **time complexity**
 | `print_list.c` | Prints a doubly linked list |
 | `sort.h` | Header file with all prototypes and data structures |
 | `deck.h` | Header defining card and deck structures |
-| `main.c` files | Test files for each sorting algorithm |
+| `main.c` | Test files for each sorting algorithm |
 
 ---
 
@@ -88,39 +74,32 @@ Each algorithm has an associated file (`*-O`) containing its **time complexity**
 
 ## 🏗️ Requirements
 
-- **Allowed editors:** `vi`, `vim`, `emacs`  
-- **Compilation:**  
-  ```bash
-  gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o sort
-
----
-
-- All files should end with a new line.
-
-- Code must follow Betty coding style.
-
-- No global variables.
-
-- No more than 5 functions per file.
-
-- You are allowed to use the standard library.
-
-- All function prototypes must be declared in sort.h.
-
-- All header files must be include-guarded.
+- Allowed editors: **vi**, **vim**, **emacs**
+- All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options **-Wall -Werror -Wextra -pedantic -std=gnu89**
+- All your files should end with a new line
+- A **README.md** file, at the root of the folder of the project, is mandatory
+- Your code should use the Betty style. It will be checked using **betty-style.pl** and **betty-doc.pl**
+- You are not allowed to use global variables
+- No more than 5 functions per file
+- Unless specified otherwise, you are not allowed to use the standard library. Any use of functions like **printf**, **puts**, … is totally forbidden.
+- In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own **main.c** files at compilation. Our **main.c** files might be different from the one shown in the examples
+- The prototypes of all your functions should be included in your header file called **sort.h**
+- Don’t forget to push your header file
+- All your header files should be include guarded
+- A list/array does not need to be sorted if its size is less than 2.
 
 ---
 
 ## 🚀 Usage Example
 
- ```bash
+ ```
  gcc -Wall -Wextra -Werror -pedantic -std=gnu89 0-main.c 0-bubble_sort.c print_array.c -o bubble
  ./bubble
  ```
 
 Example Output
 
- ```bash
+ ```
  19, 48, 99, 71, 13, 52, 96, 73, 86, 7
  19, 48, 71, 13, 52, 96, 73, 86, 7, 99
  ...
@@ -128,37 +107,18 @@ Example Output
 
 ---
 
-## 🧮 Concept Summary
-
-| Concept | Description |
-|----------|--------------|
-| **In-place sorting** | Sorting without using extra memory |
-| **Stable sorting** | Keeps the order of equal elements |
-| **Divide and conquer** | Splits the problem into smaller parts (Quick, Merge) |
-| **Comparison-based sorting** | Relies on comparing elements |
-| **Non-comparison sorting** | Sorts using value properties (Counting, Radix) |
-
----
-
 ## ✍️Authors
 
-## 👨🏽‍💻 Mohammed Abdulrahman Basuliman**  
+## 👨🏽‍💻 Mohammed Abdulrahman Basuliman
 📍 Riyadh, Saudi Arabia  
 🎓 IT Student at Saudi Electronic University  
 🎓 Student at Holberton School  
 📧 4thkiller2005@gmail.com  
 🔗 GitHub: [oDoDyK](https://github.com/oDoDyK)
 
-## 👩🏻‍💻 Nada Ghannam Al-Mutairi**  
+## 👩🏻‍💻 Nada Ghannam Al-Mutairi
 📍 Riyadh, Saudi Arabia  
 🎓 IS Student at AlMaarefa University  
 🎓 Student at Holberton School  
-📧 nada1010100@gmail.com  
+📧 Nada.ghannam19@gmail.com  
 🔗 GitHub: [NadaGhannam25](https://github.com/NadaGhannam25)
-
----
-
-## 💡 Motivational Note
-```bash
-"Mastering Sorting Algorithms & Big O 📊💻 makes your code faster ⚡, smarter 🧠, and prepares you to tackle any challenge! 🔥"
-```
