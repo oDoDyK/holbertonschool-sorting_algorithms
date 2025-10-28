@@ -3,8 +3,8 @@
 
 /**
 * swap_ints - swaps two integers
-* @a: first integer
-* @b: second integer
+* @a: first int
+* @b: second int
 */
 void swap_ints(int *a, int *b)
 {
@@ -14,11 +14,11 @@ int tmp = *a;
 }
 
 /**
-* hoare_partition - implements Hoare partition scheme
-* @array: array of integers
+* hoare_partition - Hoare partition scheme
+* @array: array to sort
 * @size: size of array
-* @low: starting index
-* @high: ending index
+* @low: start index
+* @high: end index
 * Return: partition index
 */
 int hoare_partition(int *array, size_t size, int low, int high)
@@ -45,11 +45,11 @@ print_array(array, size);
 }
 
 /**
-* quick_sort_hoare_rec - recursive quick sort using Hoare partition
-* @array: array of integers
+* quick_sort_hoare_rec - recursive quicksort (Hoare scheme)
+* @array: array to sort
 * @size: size of array
-* @low: starting index
-* @high: ending index
+* @low: start index
+* @high: end index
 */
 void quick_sort_hoare_rec(int *array, size_t size, int low, int high)
 {
@@ -73,6 +73,6 @@ void quick_sort_hoare(int *array, size_t size)
 if (!array || size < 2)
 return;
 
-quick_sort_hoare_rec(array, size, 0, size - 1);
+quick_sort_hoare_rec(array, size, 0, (int)size - 1);
 }
 
