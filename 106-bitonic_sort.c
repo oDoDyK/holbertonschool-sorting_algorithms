@@ -14,14 +14,16 @@ int temp = *a;
 }
 
 /**
-* bitonic_merge - recursively sorts a bitonic sequence in ascending or descending order
+* bitonic_merge - recursively sorts a bitonic sequence
+*                 in ascending or descending order
 * @array: array of integers
 * @size: total size of array
 * @start: starting index
 * @seq_size: size of the current sequence
 * @up: 1 for ascending, 0 for descending
 */
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq_size, int up)
+void bitonic_merge(int *array, size_t size,
+size_t start, size_t seq_size, int up)
 {
 size_t i, mid;
 
@@ -48,7 +50,8 @@ bitonic_merge(array, size, start + mid, mid, up);
 * @seq_size: size of current sequence
 * @up: direction (1 = ascending, 0 = descending)
 */
-void bitonic_sort_recursive(int *array, size_t size, size_t start, size_t seq_size, int up)
+void bitonic_sort_recursive(int *array, size_t size,
+size_t start, size_t seq_size, int up)
 {
 size_t mid;
 
@@ -57,14 +60,16 @@ return;
 
 mid = seq_size / 2;
 
-printf("Merging [%lu/%lu] (%s):\n", seq_size, size, up ? "UP" : "DOWN");
+printf("Merging [%lu/%lu] (%s):\n",
+seq_size, size, up ? "UP" : "DOWN");
 print_array(array + start, seq_size);
 
-bitonic_sort_recursive(array, size, start, mid, 1);       /* ascending */
-bitonic_sort_recursive(array, size, start + mid, mid, 0); /* descending */
+bitonic_sort_recursive(array, size, start, mid, 1);
+bitonic_sort_recursive(array, size, start + mid, mid, 0);
 bitonic_merge(array, size, start, seq_size, up);
 
-printf("Result [%lu/%lu] (%s):\n", seq_size, size, up ? "UP" : "DOWN");
+printf("Result [%lu/%lu] (%s):\n",
+seq_size, size, up ? "UP" : "DOWN");
 print_array(array + start, seq_size);
 }
 
